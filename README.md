@@ -1,22 +1,29 @@
 # Real-Time Medical Image Analysis with Deep Learning
 
-This repository contains deep learning experiments for CT scan image classification, focused on **COVID vs non-COVID** detection.
+Deep learning project for CT scan image classification, focused on **COVID vs non-COVID** detection.
 
-## Project Contents
+## Key Highlights
 
-- `CTSCAN/` - CT image dataset used for training and evaluation
-  - `CTSCAN/COVID/` - 1240 images
-  - `CTSCAN/non-COVID/` - 1195 images
-- `dissertation.ipynb` - Main dissertation notebook
-- `Densenet3.ipynb` - DenseNet-based model experiment
-- `High of Densenetnew.ipynb` - DenseNet variant experiment
-- `High of VGG16.ipynb` - VGG16-based model experiment
-- `High of xception.ipynb` - Xception-based model experiment
-- `High custom cnn.ipynb` and `high custom cnn(1).ipynb` - Custom CNN experiments
+- Binary CT classification pipeline (`COVID` vs `non-COVID`)
+- Multiple model experiments: DenseNet, VGG16, Xception, custom CNN
+- Notebook-driven experimentation for training and evaluation
+- Dataset included in repository for reproducible analysis
 
-## Objective
+## Dataset
 
-Build and compare deep learning models for automated CT scan classification to support medical image analysis workflows.
+- `CTSCAN/COVID/` - 1240 images
+- `CTSCAN/non-COVID/` - 1195 images
+
+## Repository Structure
+
+- `dissertation.ipynb` - Main project notebook
+- `Densenet3.ipynb` - DenseNet baseline
+- `High of Densenetnew.ipynb` - DenseNet variant
+- `High of VGG16.ipynb` - VGG16 experiment
+- `High of xception.ipynb` - Xception experiment
+- `High custom cnn.ipynb` - Custom CNN experiment
+- `high custom cnn(1).ipynb` - Additional custom CNN run
+- `CTSCAN/` - Image dataset
 
 ## Setup
 
@@ -35,6 +42,12 @@ jupyter notebook
 ```
 
 Open the notebooks and run cells in sequence.
+
+## Suggested Workflow
+
+1. Start with `dissertation.ipynb` for overall pipeline.
+2. Run architecture-specific notebooks for model comparisons.
+3. Compare outputs (accuracy/loss/confusion matrix) across models.
 
 ## Notes
 
